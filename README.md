@@ -1,44 +1,93 @@
-# TB-DLossNet
+# TBDLossNet
 
-Official implementation of TB-DLossNet for fine-grained agricultural lesion segmentation.
+## Project Structure
 
-This repository contains the complete source code and dataset used in the manuscript.
+```
+TBDLossNet/                # Source code
+│
+├── data_processing/      # Data preprocessing scripts
+├── model/                # Model architecture
+├── train/                # Training scripts
+├── test/                 # Testing scripts
+│
+VOC2007/                  # Full dataset
+│
+├── JPEGImages/           # Input images
+├── SegmentationClass/    # Pixel-level masks
+├── ImageSets/            # Data splits
+│
+images/                   # Images used in the paper
+│
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## Repository Structure
-├── TBLossNet/ # Source code
-│ ├── data processing/ # Data preprocessing scripts
-│ ├── model/ # Model architecture
-│ ├── train/ # Training scripts
-│ ├── test/ # Testing scripts
-│
-├── VOC2007/ # Complete dataset
-│ ├── JPEGImages/ # Input images
-│ ├── SegmentationClass/ # Pixel-level masks
-│ ├── ImageSets/ # Data splits
-│
-├── images/ # Figures used in the paper
-│
-├── requirements
-└── README.md
+## Environment Requirements
 
-## Environment
+- Python >= 3.8  
+- PyTorch >= 1.10.0  
 
-- Python >= 3.8
-- PyTorch >= 1.10.0
+---
+
+## Installation
 
 Install dependencies:
 
 ```bash
-pip install -r requirements
+pip install -r requirements.txt
+```
 
-Training
-To train the model:
+---
+
+## Training
+
+Navigate to the training directory:
+
+```bash
 cd TBLossNet/train
-python train_multimodal_vmamba.py
+```
 
-Testing
-To evaluate the model:
+Run the training script:
+
+```bash
+python train_multimodal_vmamba.py
+```
+
+---
+
+## Testing
+
+Navigate to the testing directory:
+
+```bash
 cd TBLossNet/test
+```
+
+Run the testing script:
+
+```bash
 python test_multimodal_vmamba.py
+```
+
+---
+
+## Dependencies
+
+```
+torch>=1.10.0
+torchvision>=0.11.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+pandas>=1.3.0
+tqdm>=4.64.0
+scipy>=1.7.0
+Pillow>=9.0.0
+opencv-python>=4.5.0
+scikit-learn>=1.0.0
+transformers>=4.30.0
+sentencepiece>=0.1.99
+huggingface-hub>=0.16.0
+einops>=0.6.0
+```
