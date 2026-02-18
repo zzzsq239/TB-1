@@ -1,5 +1,3 @@
-# /root/lanyun-tmp/oiltea_multimodal_segmentation/train_multimodal_vmamba_corrected.py
-
 import os
 import sys
 import torch
