@@ -10,11 +10,12 @@ TBDLossNet/                # Source code
 ├── train/                # Training scripts
 ├── test/                 # Testing scripts
 │
-VOC2007/                  # Full dataset
-│
-├── JPEGImages/           # Input images
-├── SegmentationClass/    # Pixel-level masks
-├── ImageSets/            # Data splits
+VOC2007/
+├── ImageSets/           # Dataset splits (train / val / test)
+├── JPEGImages/          # Original images
+├── SegmentationClass/   # Pixel-level segmentation masks
+├── img/                 # Additional images (png)
+└── labelcol/            # Colored label maps
 │
 images/                   # Images used in the paper
 │
