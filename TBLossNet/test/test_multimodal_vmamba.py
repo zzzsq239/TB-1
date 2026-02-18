@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# /root/lanyun-tmp/oiltea_multimodal_segmentation/test_multimodal_vmamba_with_boundary_corrected.py
-
 import os
 import sys
 import torch
